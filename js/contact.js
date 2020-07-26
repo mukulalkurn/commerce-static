@@ -83,3 +83,15 @@ $(document).ready(function(){
         
  })(jQuery)
 })
+//https://www.google.com/maps/place/The+Study+Lab/@21.1109897,79.0433884,17z/data=!3m1!4b1!4m5!3m4!1s0x3bd4bf58de21273f:0xab8ef58cdcc7bbb1!8m2!3d21.1109897!4d79.0455771
+
+
+var map = L.map('map').setView([21.1109897,79.0433884], 15);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([21.1109897,79.0433884]).addTo(map)
+    .bindPopup('StudyLAB')
+    .openPopup();
