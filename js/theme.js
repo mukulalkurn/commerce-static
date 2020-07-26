@@ -95,10 +95,10 @@
     if ($(".testi_slider").length) {
       $(".testi_slider").owlCarousel({
         loop: true,
-        margin: 30,
-        items: 2,
-        autoplay: 2500,
-        smartSpeed: 2500,
+        margin: 5,
+        items: 1,
+        autoplay: 1000,
+        smartSpeed: 1500,
         dots: true,
         responsiveClass: true,
         responsive: {
@@ -106,7 +106,7 @@
             items: 1
           },
           991: {
-            items: 2
+            items: 1
           }
         }
       });
