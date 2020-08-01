@@ -30,6 +30,8 @@ body {
   font-weight: 400;
   color: #7b838a; }
 
+      .navbar-brand img{ width: 70px; }
+
 h1,
 h2,
 h3,
